@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_contact_us.xml" value="0.4" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_conversations_dialog.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_conversations_list.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_conversations_topics.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_dictionary.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_english_exercise.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_english_lessons.xml" value="0.16799999999999998" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_future_continuous_tense.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_future_indefinate_tense.xml" value="0.4" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_future_perfect_continuous_tense.xml" value="0.264" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_future_perfect_tense.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_future_tense.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_message_of_day.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_moral_stories.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_parts_speech.xml" value="0.16799999999999998" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_past_tense.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_phrases.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_present_continuous_tense.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_present_indefinate_tense.xml" value="0.4" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_present_perfect_tense.xml" value="0.4" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_present_tense.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_quiz_of_day.xml" value="0.2" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_splash.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_tenses.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_vocabulary_words.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_word_detail.xml" value="0.2" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/activity_words.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/categories_cell.xml" value="0.11510416666666666" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/categories_celltwo.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/conversation_categories_cell.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/drawer_categories_cell.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/example_cell.xml" value="0.3793103448275862" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/exercise_categories_cell.xml" value="0.4" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/message_custom_cell.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/nav_header.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/part_of_speech_detail.xml" value="0.264" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/phrases_cell.xml" value="0.4" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/pos_cell.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/quiz_custom_cell.xml" value="0.264" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/receiver_dialog_cell.xml" value="0.14270833333333333" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/recent_words_cell.xml" value="0.16799999999999998" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/sender_dialog_cell.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/stories_cell.xml" value="0.13854166666666667" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/tenses_cell.xml" value="0.4" />
+        <entry key="..\:/Users/21262/Desktop/EducationalApp/app/src/main/res/layout/words_cell.xml" value="0.14270833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
