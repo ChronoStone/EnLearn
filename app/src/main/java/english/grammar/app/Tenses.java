@@ -126,7 +126,7 @@ public class Tenses extends AppCompatActivity {
             TextView shortTxt = rowView.findViewById(R.id.shortTxt);
             AutoResizeTextView optionname = rowView.findViewById(R.id.optionname);
             TextView opurdu = rowView.findViewById(R.id.opurdu);
-            opurdu.setText(mainOpionsUrdu[i]);
+            //opurdu.setText(mainOpionsUrdu[i]);
             optionname.setText(mainOpions[i]);
             optionname.setTextColor(Tenses.this.getResources().getColor(R.color.white));
             shortTxt.setText(shorttxt[i]);

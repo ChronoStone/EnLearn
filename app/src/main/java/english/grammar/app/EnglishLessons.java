@@ -27,8 +27,8 @@ public class EnglishLessons extends AppCompatActivity {
     InterstitialAd interstitial;
     ImageButton backBtn;
     RecyclerView mainOptionsLV;
-    String[] shorttxt = {"EC", "EE"};
-    String[] mainOpions = {"English Conversations", "English Expressions"};
+    String[] shorttxt = {"EC", "CE"};
+    String[] mainOpions = {"English Conversations", "Common Expressions"};
     String[] mainOpionsurdu = {"Conversations en Anglais", "Expressions en Anglais"};
     MainOptionsAdapter mainOptionsAdapter;
 
@@ -87,7 +87,7 @@ public class EnglishLessons extends AppCompatActivity {
         @Override
         public void onBindViewHolder(@NonNull MyAdapter holder, int position) {
             holder.optionname.setText(mainOpions[position]);
-            holder.optionnameurdu.setText(mainOpionsurdu[position]);
+            //holder.optionnameurdu.setText(mainOpionsurdu[position]);
             holder.shortTxt.setText(shorttxt[position]);
             holder.shortTxtCard.setCardBackgroundColor(EnglishLessons.this.getResources().getColor(R.color.white));
         }

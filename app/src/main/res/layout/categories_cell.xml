@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/mainCard"
     android:layout_width="match_parent"
-    android:layout_height="150dp"
+    android:layout_height="140dp"
     android:layout_margin="10dp"
     app:cardBackgroundColor="@color/maincolor"
     app:cardCornerRadius="6dp"
@@ -16,17 +16,17 @@
         android:layout_margin="10dp"
         android:gravity="center"
         android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/shortTxt"
-            android:layout_width="55dp"
-            android:layout_height="55dp"
+      <!-- shortText -->
+        <ImageView
+            android:id="@+id/Icons"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/roundbgtwo"
-            android:fontFamily="@font/elephant"
             android:gravity="center"
-            android:text="ML"
-            android:textColor="@color/maincolor" />
+            android:src="@drawable/story"
+
+            />
+
 
         <View
             android:layout_width="match_parent"
@@ -79,18 +79,19 @@
                     android:fontFamily="@font/english_font_semi_bold"
                     android:gravity="center"
                     android:text="Scienceee"
+                    android:layout_marginBottom="15dp"
                     android:textColor="@color/white"
-                    android:textSize="14sp"
+                    android:textSize="15.3sp"
                     android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/optionnameurdu"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="0dp"
                     android:layout_marginBottom="10dp"
                     android:fontFamily="@font/urdufont"
                     android:gravity="center"
-                    android:text="پسندیدہ"
+                    android:text=""
                     android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />

@@ -47,7 +47,7 @@
                         android:layout_weight="1"
                         android:baselineAligned="false"
                         android:gravity="center_vertical"
-                        android:text="Exercise"
+                        android:text="Courses"
                         android:textColor="@color/white"
                         android:textSize="@dimen/mainheading" />
 
@@ -69,7 +69,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="30dp"
                 android:gravity="center"
-                android:text="English Tenses"
+                android:text="Language Courses"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="22dp"
                 android:textStyle="bold" />

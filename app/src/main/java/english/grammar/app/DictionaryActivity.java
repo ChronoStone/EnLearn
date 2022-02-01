@@ -54,6 +54,7 @@ public class DictionaryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dictionary);
+        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
 
         MobileAds.initialize(this, getResources().getString(R.string.admob__app_id));
         mAdView = findViewById(R.id.adView);
@@ -67,7 +68,6 @@ public class DictionaryActivity extends AppCompatActivity {
         context = getApplicationContext();
         preferences = PreferenceManager.getDefaultSharedPreferences(this);
 
-        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
         dbManager = new DBManager(this);
         dbManager.open();
         try {
@@ -85,6 +85,7 @@ public class DictionaryActivity extends AppCompatActivity {
         backBtn = findViewById(R.id.backBtn);
         exampleRV = findViewById(R.id.exampleRV);
         recentWordsRV = findViewById(R.id.recentWordsRV);
+
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
         LinearLayoutManager linearLayoutManager1 = new LinearLayoutManager(this);
         exampleRV.setLayoutManager(linearLayoutManager);

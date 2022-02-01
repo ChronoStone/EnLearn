@@ -62,13 +62,13 @@ public class Conversation_DBManager {
 
     }
 
-    // ---opens the database---
+    // ---opening the database---
     public Conversation_DBManager open() throws SQLException {
         db = DBHelper.getWritableDatabase();
         return this;
     }
 
-    // ---closes the database---
+    // ---closing the database---
     public void close() {
         DBHelper.close();
     }

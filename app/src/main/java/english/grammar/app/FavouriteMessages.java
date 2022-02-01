@@ -82,7 +82,7 @@ public class FavouriteMessages extends AppCompatActivity {
         backBtn = findViewById(R.id.backBtn);
         messageRV = findViewById(R.id.messageRV);
         messageRV.setLayoutManager(new LinearLayoutManager(this));
-        titletxt.setText("Favourite Messsages");
+        titletxt.setText("Favourite Quotes");
         exampleAdapter = new ExampleAdapter(FavouriteMessages.this);
         messageRV.setAdapter(exampleAdapter);
 

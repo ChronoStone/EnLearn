@@ -106,7 +106,7 @@ public class EnglishExercise extends AppCompatActivity {
             TextView optionname = rowView.findViewById(R.id.optionname);
             TextView optionnameurdu = rowView.findViewById(R.id.optionnameurdu);
             optionname.setText(mainOpions[i]);
-            optionnameurdu.setText(mainOpionsurdu[i]);
+            //optionnameurdu.setText(mainOpionsurdu[i]);
             shortTxt.setText(shorttxt[i]);
             shortTxt.setTextColor(EnglishExercise.this.getResources().getColor(R.color.maincolor));
             shortTxtCard.setCardBackgroundColor(EnglishExercise.this.getResources().getColor(R.color.white));

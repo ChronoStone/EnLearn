@@ -31,6 +31,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -45,7 +46,7 @@ import java.io.IOException;
 import java.util.Calendar;
 
 public class MainActivity extends AppCompatActivity {
-
+   //for favorite quotes
     CardView favCard;
     InterstitialAd interstitial;
     SharedPreferences preferences;
@@ -58,14 +59,15 @@ public class MainActivity extends AppCompatActivity {
     ListView optionsLV;
     private String currentTitle = "Dictionary";
 
-    String[] mainOpions = {"Dictionary", "English Formulas", "Quote of the Day", "English Quiz", "Moral Stories", "Language Courses"};
-    String[] mainOpionsUrdu = {"Dictionnaire", "Formules en Anglais", "Citation du Jour", "Questionnaire", "Histoires Morales", "Cours de langue"};
-    String[] shorttxt = {"D", "EF", "QD", "EQ", "MS", "LC"};
-
+    String[] mainOpions = {"Dictionary", "Communication", "Quote of the Day", "English Quizzes", "Moral Stories", "English Courses"};
+    String[] mainOpionsUrdu = {"لغة", "دروس انجليزي", "اقتباس اليوم", "اختبار اليوم", "قصص أخلاقية", "تمارين"};
+    String[] shorttxt = {"D", "EL", "MD", "QD", "MS", "EE"};
+    int[] iconsOptions = {R.drawable.dictionary, R.drawable.communication,R.drawable.quote,R.drawable.quiz,R.drawable.story,R.drawable.exercice};
     String[] opions = {"Share", "Rate Us", "About Us", "More Apps"};
     Integer[] shorttxtcolor = {R.color.thirdcard, R.color.firstcard, R.color.secondcard, R.color.fourthcard, R.color.fifthcard, R.color.sixthcard};
     Integer[] opions_icons_white = {R.drawable.share_unfill, R.drawable.star, R.drawable.about_us_unfilled, R.drawable.moreapp};
     Integer[] opions_icons_blue = {R.drawable.share_filled, R.drawable.star_filled, R.drawable.about_us_filled, R.drawable.app_filled};
+
     MainOptionsAdapter mainOptionsAdapter;
     OptionsAdapter optionsAdapter;
     int drawerpos = 0;
@@ -245,8 +247,9 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onBindViewHolder(@NonNull MyAdapter holder, int position) {
             holder.optionname.setText(mainOpions[position]);
-            holder.optionnameurdu.setText(mainOpionsUrdu[position]);
-            holder.shortTxt.setText(shorttxt[position]);
+           // holder.optionnameurdu.setText(mainOpionsUrdu[position]);
+            holder.myIcon.setImageResource(iconsOptions[position]);
+            //holder.shortTxt.setText(shorttxt[position]);
             holder.shortTxtCard.setCardBackgroundColor(MainActivity.this.getResources().getColor(shorttxtcolor[position]));
         }
 
@@ -259,6 +262,7 @@ public class MainActivity extends AppCompatActivity {
 
             LinearLayout cell;
             TextView optionname, optionnameurdu, shortTxt;
+            ImageView myIcon;
             CardView shortTxtCard;
 
             public MyAdapter(@NonNull View itemView) {
@@ -267,7 +271,8 @@ public class MainActivity extends AppCompatActivity {
                 cell = itemView.findViewById(R.id.cell);
                 optionname = itemView.findViewById(R.id.optionname);
                 optionnameurdu = itemView.findViewById(R.id.optionnameurdu);
-                shortTxt = itemView.findViewById(R.id.shortTxt);
+                myIcon=itemView.findViewById(R.id.Icons);
+                //shortTxt = itemView.findViewById(R.id.shortTxt);
                 shortTxtCard = itemView.findViewById(R.id.shortTxtCard);
 
                 itemView.setOnClickListener(new View.OnClickListener() {
@@ -335,7 +340,7 @@ public class MainActivity extends AppCompatActivity {
             return rowView;
         }
     }
-
+// store flag value in preferences
     public void QuotePreference() {
         preferences = PreferenceManager.getDefaultSharedPreferences(this);
         SharedPreferences.Editor editor = preferences.edit();
@@ -343,7 +348,7 @@ public class MainActivity extends AppCompatActivity {
         editor.apply();
         editor.commit();
     }
-
+     //retrieve flag value from preferences
     public void GetQuotePreference() {
         preferences = PreferenceManager.getDefaultSharedPreferences(this);
         flag = preferences.getInt("flag", 0);

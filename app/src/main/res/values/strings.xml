@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">English Grammar</string>
+    <string name="app_name">English Learning</string>
     <string name="dictionary">English</string>
     <string name="content_description_open_drawer">Open Drawer</string>
     <string name="content_description_close_drawer">Closed Drawer</string>

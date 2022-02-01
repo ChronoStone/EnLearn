@@ -126,7 +126,7 @@ public class FutureTense extends AppCompatActivity {
             TextView shortTxt = rowView.findViewById(R.id.shortTxt);
             TextView optionname = rowView.findViewById(R.id.optionname);
             TextView opurdu = rowView.findViewById(R.id.opurdu);
-            opurdu.setText(mainOpionsUrdu[i]);
+            //opurdu.setText(mainOpionsUrdu[i]);
             optionname.setText(dbManager.getTensesNames(SharedClass.mainOption).get(i).getName());
             optionname.setTextColor(FutureTense.this.getResources().getColor(R.color.white));
             shortTxt.setText(shorttxt[i]);
