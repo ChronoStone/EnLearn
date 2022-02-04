@@ -72,13 +72,13 @@ public class PartOfSpeech_Detail extends AppCompatActivity {
         }
 
         titleTxt = findViewById(R.id.titleTxt);
-        methodUrdu = findViewById(R.id.methodUrdu);
+        //methodUrdu = findViewById(R.id.methodUrdu);
         methodEnglish = findViewById(R.id.methodEnglish);
         engDeftxt = findViewById(R.id.engDeftxt);
-        urduDeftxt = findViewById(R.id.urduDeftxt);
-        urduDeftxt.setTypeface(alvi_Nastaleeq_Lahori);
+       // urduDeftxt = findViewById(R.id.urduDeftxt);
+        //urduDeftxt.setTypeface(alvi_Nastaleeq_Lahori);
         engDeftxt.setText(dbManager.getPartsOfSpeech(SharedClass.tense_id).get(0).getDef_eng());
-        urduDeftxt.setText(dbManager.getPartsOfSpeech(SharedClass.tense_id).get(0).getDef_urdu());
+        //urduDeftxt.setText(dbManager.getPartsOfSpeech(SharedClass.tense_id).get(0).getDef_urdu());
         methodEnglish.setText(dbManager.getPartsOfSpeech(SharedClass.tense_id).get(0).getEg_eng());
         titleTxt.setText(dbManager.getPartsOfSpeech(SharedClass.tense_id).get(0).getName_eng());
 
@@ -126,13 +126,13 @@ public class PartOfSpeech_Detail extends AppCompatActivity {
     }
 
     private void initExample() {
-        ExampleModel exampleModel = new ExampleModel("Example", "Urdu Meaning");
+        ExampleModel exampleModel = new ExampleModel("Example");
         exampleData.add(exampleModel);
-        ExampleModel exampleModel1 = new ExampleModel("Example", "Urdu Meaning");
+        ExampleModel exampleModel1 = new ExampleModel("Example");
         exampleData.add(exampleModel1);
-        ExampleModel exampleModel2 = new ExampleModel("Example", "Urdu Meaning");
+        ExampleModel exampleModel2 = new ExampleModel("Example");
         exampleData.add(exampleModel2);
-        ExampleModel exampleModel3 = new ExampleModel("Example", "Urdu Meaning");
+        ExampleModel exampleModel3 = new ExampleModel("Example");
         exampleData.add(exampleModel3);
     }
 
@@ -168,7 +168,7 @@ public class PartOfSpeech_Detail extends AppCompatActivity {
             TextView meaningTxt = rowView.findViewById(R.id.meaningTxt);
 
             exampleTxt.setText(exampleData.get(i).getExample());
-            meaningTxt.setText(exampleData.get(i).getUrduMeaning());
+            //meaningTxt.setText(exampleData.get(i).getUrduMeaning());
 
             return rowView;
         }

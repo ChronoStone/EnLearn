@@ -2,16 +2,14 @@ package english.grammar.app.Models;
 
 public class TensesModel {
 
-    private String id, name, def_urdu, method_urdu, def_eng, method_eng, main_tense;
+    private String id, name, def_eng, method_eng, main_tense;
 
     public TensesModel() {
     }
 
-    public TensesModel(String id, String name, String def_urdu, String method_urdu, String def_eng, String method_eng, String main_tense) {
+    public TensesModel(String id, String name, String def_eng, String method_eng, String main_tense) {
         this.id = id;
         this.name = name;
-        this.def_urdu = def_urdu;
-        this.method_urdu = method_urdu;
         this.def_eng = def_eng;
         this.method_eng = method_eng;
         this.main_tense = main_tense;
@@ -33,21 +31,6 @@ public class TensesModel {
         this.name = name;
     }
 
-    public String getDef_urdu() {
-        return def_urdu;
-    }
-
-    public void setDef_urdu(String def_urdu) {
-        this.def_urdu = def_urdu;
-    }
-
-    public String getMethod_urdu() {
-        return method_urdu;
-    }
-
-    public void setMethod_urdu(String method_urdu) {
-        this.method_urdu = method_urdu;
-    }
 
     public String getDef_eng() {
         return def_eng;

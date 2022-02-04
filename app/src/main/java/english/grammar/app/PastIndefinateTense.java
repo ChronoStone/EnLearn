@@ -120,13 +120,13 @@ public class PastIndefinateTense extends AppCompatActivity {
     }
 
     private void initExample() {
-        ExampleModel exampleModel = new ExampleModel("Example", "Urdu Meaning");
+        ExampleModel exampleModel = new ExampleModel("Example");
         exampleData.add(exampleModel);
-        ExampleModel exampleModel1 = new ExampleModel("Example", "Urdu Meaning");
+        ExampleModel exampleModel1 = new ExampleModel("Example");
         exampleData.add(exampleModel1);
-        ExampleModel exampleModel2 = new ExampleModel("Example", "Urdu Meaning");
+        ExampleModel exampleModel2 = new ExampleModel("Example");
         exampleData.add(exampleModel2);
-        ExampleModel exampleModel3 = new ExampleModel("Example", "Urdu Meaning");
+        ExampleModel exampleModel3 = new ExampleModel("Example");
         exampleData.add(exampleModel3);
     }
 

@@ -2,14 +2,14 @@ package english.grammar.app.Models;
 
 public class ExampleModel {
 
-    private String Example, urduMeaning;
+    private String Example;
 
     public ExampleModel() {
     }
 
-    public ExampleModel(String example, String urduMeaning) {
+    public ExampleModel(String example) {
         Example = example;
-        this.urduMeaning = urduMeaning;
+        //this.urduMeaning = urduMeaning;
     }
 
     public String getExample() {
@@ -20,11 +20,6 @@ public class ExampleModel {
         Example = example;
     }
 
-    public String getUrduMeaning() {
-        return urduMeaning;
-    }
-
-    public void setUrduMeaning(String urduMeaning) {
-        this.urduMeaning = urduMeaning;
-    }
+    /*
+    }*/
 }

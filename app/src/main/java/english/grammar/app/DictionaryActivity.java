@@ -102,7 +102,12 @@ public class DictionaryActivity extends AppCompatActivity {
         } catch (Exception e) {
             e.printStackTrace();
         }
-
+        if (searchEdt.getText().toString().equals("")) {
+            recentWordsRV.setVisibility(View.VISIBLE);
+            exampleRV.setVisibility(View.GONE);
+            dictionaryData.clear();
+            exampleAdapter.notifyDataSetChanged();
+        }
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

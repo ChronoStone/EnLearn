@@ -294,8 +294,8 @@ public class Conversation_DBManager {
                 TensesModel tensesModel = new TensesModel();
                 tensesModel.setId(cursor.getString(0));
                 tensesModel.setName(cursor.getString(1));
-                tensesModel.setDef_urdu(cursor.getString(2));
-                tensesModel.setMethod_urdu(cursor.getString(3));
+
+
                 tensesModel.setDef_eng(cursor.getString(4));
                 tensesModel.setMethod_eng(cursor.getString(5));
                 tensesModel.setMain_tense(cursor.getString(6));
@@ -319,8 +319,6 @@ public class Conversation_DBManager {
                 TensesModel tensesModel = new TensesModel();
                 tensesModel.setId(cursor.getString(0));
                 tensesModel.setName(cursor.getString(1));
-                tensesModel.setDef_urdu(cursor.getString(2));
-                tensesModel.setMethod_urdu(cursor.getString(3));
                 tensesModel.setDef_eng(cursor.getString(4));
                 tensesModel.setMethod_eng(cursor.getString(5));
                 tensesModel.setMain_tense(cursor.getString(6));
@@ -343,8 +341,6 @@ public class Conversation_DBManager {
                 TensesModel tensesModel = new TensesModel();
                 tensesModel.setId(cursor.getString(0));
                 tensesModel.setName(cursor.getString(1));
-                tensesModel.setDef_urdu(cursor.getString(2));
-                tensesModel.setMethod_urdu(cursor.getString(3));
                 tensesModel.setDef_eng(cursor.getString(4));
                 tensesModel.setMethod_eng(cursor.getString(5));
                 data.add(tensesModel);
@@ -366,9 +362,7 @@ public class Conversation_DBManager {
                 PartOfSpeechModel partOfSpeechModel = new PartOfSpeechModel();
                 partOfSpeechModel.setId(cursor.getString(0));
                 partOfSpeechModel.setName_eng(cursor.getString(1));
-                partOfSpeechModel.setName_urdu(cursor.getString(2));
                 partOfSpeechModel.setDef_eng(cursor.getString(3));
-                partOfSpeechModel.setDef_urdu(cursor.getString(4));
                 partOfSpeechModel.setEg_eng(cursor.getString(5));
                 data.add(partOfSpeechModel);
             } while (cursor.moveToNext());
@@ -390,9 +384,7 @@ public class Conversation_DBManager {
                 PartOfSpeechModel partOfSpeechModel = new PartOfSpeechModel();
                 partOfSpeechModel.setId(cursor.getString(0));
                 partOfSpeechModel.setName_eng(cursor.getString(1));
-                partOfSpeechModel.setName_urdu(cursor.getString(2));
                 partOfSpeechModel.setDef_eng(cursor.getString(3));
-                partOfSpeechModel.setDef_urdu(cursor.getString(4));
                 partOfSpeechModel.setEg_eng(cursor.getString(5));
                 data.add(partOfSpeechModel);
             } while (cursor.moveToNext());
@@ -413,7 +405,6 @@ public class Conversation_DBManager {
             do {
                 TensesExampleModel tensesExampleModel = new TensesExampleModel();
                 tensesExampleModel.setId(cursor.getString(0));
-                tensesExampleModel.setUrduexample(cursor.getString(1));
                 tensesExampleModel.setEnglishexample(cursor.getString(2));
                 data.add(tensesExampleModel);
             } while (cursor.moveToNext());
