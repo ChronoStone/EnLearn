@@ -61,7 +61,7 @@
                         android:layout_gravity="end"
                         android:onClick="favbtn"
                         android:visibility="gone"
-                        app:srcCompat="@drawable/favourite" />
+                        app:srcCompat="@drawable/favotite1" />
 
                 </FrameLayout>
 
@@ -127,7 +127,7 @@
                             android:layout_height="60dp"
                             android:layout_marginTop="10dp"
                             android:gravity="center"
-                            android:src="@drawable/favourite"
+                            android:src="@drawable/favotite1"
 
                             />
                         <!--
