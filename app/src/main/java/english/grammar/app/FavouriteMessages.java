@@ -130,7 +130,6 @@ public class FavouriteMessages extends AppCompatActivity {
         @Override
         public void onBindViewHolder(@NonNull MyAdapter myAdapter, int i) {
             myAdapter.msgTxt.setText(quotesData.get(i).getEng_quote());
-            myAdapter.urduMeaningTxt.setText(quotesData.get(i).getAuthor());
             myAdapter.favouriteBtn.setBackgroundResource(R.drawable.favorite_heart_button);
         }
 
@@ -140,14 +139,13 @@ public class FavouriteMessages extends AppCompatActivity {
         }
 
         public class MyAdapter extends RecyclerView.ViewHolder {
-            TextView dateTxt, msgTxt, urduMeaningTxt;
+            TextView dateTxt, msgTxt;
             ImageButton speakBtn, favouriteBtn;
 
             public MyAdapter(@NonNull View itemView) {
                 super(itemView);
                 dateTxt = itemView.findViewById(R.id.dateTxt);
                 msgTxt = itemView.findViewById(R.id.msgTxt);
-                urduMeaningTxt = itemView.findViewById(R.id.urduMeaningTxt);
                 speakBtn = itemView.findViewById(R.id.speakBtn);
                 favouriteBtn = itemView.findViewById(R.id.favouriteBtn);
 

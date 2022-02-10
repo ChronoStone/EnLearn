@@ -60,8 +60,7 @@ public class MainActivity extends AppCompatActivity {
     private String currentTitle = "Dictionary";
 
     String[] mainOpions = {"Dictionary", "Communication", "Quote of the Day", "English Quizzes", "Moral Stories", "English Courses"};
-    String[] mainOpionsUrdu = {"لغة", "دروس انجليزي", "اقتباس اليوم", "اختبار اليوم", "قصص أخلاقية", "تمارين"};
-    String[] shorttxt = {"D", "EL", "MD", "QD", "MS", "EE"};
+    //String[] shorttxt = {"D", "EL", "MD", "QD", "MS", "EE"};
     int[] iconsOptions = {R.drawable.dictionary, R.drawable.communication,R.drawable.quote,R.drawable.quiz,R.drawable.story,R.drawable.exercice};
     String[] opions = {"Share", "Rate Us", "About Us", "More Apps"};
     Integer[] shorttxtcolor = {R.color.thirdcard, R.color.firstcard, R.color.secondcard, R.color.fourthcard, R.color.fifthcard, R.color.sixthcard};
@@ -247,9 +246,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onBindViewHolder(@NonNull MyAdapter holder, int position) {
             holder.optionname.setText(mainOpions[position]);
-           // holder.optionnameurdu.setText(mainOpionsUrdu[position]);
             holder.myIcon.setImageResource(iconsOptions[position]);
-            //holder.shortTxt.setText(shorttxt[position]);
             holder.shortTxtCard.setCardBackgroundColor(MainActivity.this.getResources().getColor(shorttxtcolor[position]));
         }
 
@@ -261,7 +258,7 @@ public class MainActivity extends AppCompatActivity {
         public class MyAdapter extends RecyclerView.ViewHolder {
 
             LinearLayout cell;
-            TextView optionname, optionnameurdu, shortTxt;
+            TextView optionname;
             ImageView myIcon;
             CardView shortTxtCard;
 
@@ -270,7 +267,6 @@ public class MainActivity extends AppCompatActivity {
 
                 cell = itemView.findViewById(R.id.cell);
                 optionname = itemView.findViewById(R.id.optionname);
-                optionnameurdu = itemView.findViewById(R.id.optionnameurdu);
                 myIcon=itemView.findViewById(R.id.Icons);
                 //shortTxt = itemView.findViewById(R.id.shortTxt);
                 shortTxtCard = itemView.findViewById(R.id.shortTxtCard);

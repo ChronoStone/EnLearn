@@ -111,12 +111,12 @@ public class PartsOfSpeech extends AppCompatActivity {
             CardView mainCard = rowView.findViewById(R.id.mainCard);
             TextView shortTxt = rowView.findViewById(R.id.shortTxt);
             TextView optionname = rowView.findViewById(R.id.optionname);
-            TextView optionnameurdu = rowView.findViewById(R.id.optionnameurdu);
+
 
             optionname.setText(dbManager.getPartsOfSpeech().get(i).getName_eng());
-            //optionnameurdu.setText(dbManager.getPartsOfSpeech().get(i).getName_urdu());
+
             optionname.setTextColor(PartsOfSpeech.this.getResources().getColor(R.color.maincolor));
-            //optionnameurdu.setTextColor(PartsOfSpeech.this.getResources().getColor(R.color.maincolor));
+
             shortTxt.setText(shorttxt[0]);
             shortTxt.setTextColor(PartsOfSpeech.this.getResources().getColor(R.color.white));
             shortTxtCard.setCardBackgroundColor(PartsOfSpeech.this.getResources().getColor(R.color.maincolor));

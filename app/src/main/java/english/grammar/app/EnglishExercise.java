@@ -27,7 +27,6 @@ public class EnglishExercise extends AppCompatActivity {
     ListView mainOptionsLV;
     String[] shorttxt = {"ET", "EG"};
     String[] mainOpions = {"English Tenses", "English Grammer"};
-    String[] mainOpionsurdu = {"فعل کے زمانے", "انگریزی گرائمر"};
     MainOptionsAdapter mainOptionsAdapter;
 
     @Override
@@ -104,9 +103,9 @@ public class EnglishExercise extends AppCompatActivity {
             CardView mainCard = rowView.findViewById(R.id.mainCard);
             TextView shortTxt = rowView.findViewById(R.id.shortTxt);
             TextView optionname = rowView.findViewById(R.id.optionname);
-            TextView optionnameurdu = rowView.findViewById(R.id.optionnameurdu);
+
             optionname.setText(mainOpions[i]);
-            //optionnameurdu.setText(mainOpionsurdu[i]);
+
             shortTxt.setText(shorttxt[i]);
             shortTxt.setTextColor(EnglishExercise.this.getResources().getColor(R.color.maincolor));
             shortTxtCard.setCardBackgroundColor(EnglishExercise.this.getResources().getColor(R.color.white));

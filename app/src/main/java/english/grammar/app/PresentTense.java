@@ -31,7 +31,7 @@ public class PresentTense extends AppCompatActivity {
     ImageButton backBtn;
     ListView mainOptionsLV;
     String[] shorttxt = {"ET", "ET", "ET", "ET"};
-    String[] mainOpionsUrdu = {"فعل حال", "فعل حال جاریہ", "فعل حال مکمل", "فعل حال مکمل جاری"};
+
     MainOptionsAdapter mainOptionsAdapter;
 
     @Override
@@ -125,8 +125,7 @@ public class PresentTense extends AppCompatActivity {
             CardView mainCard = rowView.findViewById(R.id.mainCard);
             TextView shortTxt = rowView.findViewById(R.id.shortTxt);
             TextView optionname = rowView.findViewById(R.id.optionname);
-            TextView opurdu = rowView.findViewById(R.id.opurdu);
-            //opurdu.setText(mainOpionsUrdu[i]);
+
             optionname.setText(dbManager.getTensesNames(SharedClass.mainOption).get(i).getName());
             optionname.setTextColor(PresentTense.this.getResources().getColor(R.color.white));
             shortTxt.setText(shorttxt[i]);

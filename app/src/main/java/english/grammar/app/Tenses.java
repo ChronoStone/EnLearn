@@ -34,7 +34,7 @@ public class Tenses extends AppCompatActivity {
     ListView mainOptionsLV;
     String[] shorttxt = {"FT", "PT", "FT"};
     String[] mainOpions = {"Present Tense", "Past Tense", "Future Tense"};
-    String[] mainOpionsUrdu = {"فعل حال", "فعل ماضی", "فعل مستقبل"};
+
     Integer[] colors = {R.color.white, R.color.white, R.color.white};
     MainOptionsAdapter mainOptionsAdapter;
     Conversation_DBManager dbManager;
@@ -125,8 +125,6 @@ public class Tenses extends AppCompatActivity {
             CardView mainCard = rowView.findViewById(R.id.mainCard);
             TextView shortTxt = rowView.findViewById(R.id.shortTxt);
             AutoResizeTextView optionname = rowView.findViewById(R.id.optionname);
-            TextView opurdu = rowView.findViewById(R.id.opurdu);
-            //opurdu.setText(mainOpionsUrdu[i]);
             optionname.setText(mainOpions[i]);
             optionname.setTextColor(Tenses.this.getResources().getColor(R.color.white));
             shortTxt.setText(shorttxt[i]);

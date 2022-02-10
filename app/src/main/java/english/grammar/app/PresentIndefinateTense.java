@@ -35,7 +35,7 @@ public class PresentIndefinateTense extends AppCompatActivity {
     List<ExampleModel> exampleData = new ArrayList<>();
     ImageButton backBtn, defbtn, methodbtn;
     ListView exampleLV;
-    TextView engDeftxt, urduDeftxt, methodEnglish, methodUrdu;
+    TextView engDeftxt,  methodEnglish;
     ExampleAdapter exampleAdapter;
     Typeface alvi_Nastaleeq_Lahori, montserrat_reg, montserrat_semibold;
 
@@ -78,21 +78,19 @@ public class PresentIndefinateTense extends AppCompatActivity {
         dbManager = new Conversation_DBManager(this);
         dbManager.open();
 
-        methodUrdu = findViewById(R.id.methodUrdu);
+
         methodEnglish = findViewById(R.id.methodEnglish);
         engDeftxt = findViewById(R.id.engDeftxt);
-        urduDeftxt = findViewById(R.id.urduDeftxt);
+
         backBtn = findViewById(R.id.backBtn);
         exampleLV = findViewById(R.id.exampleLV);
         exampleAdapter = new ExampleAdapter();
         exampleLV.setAdapter(exampleAdapter);
 
         engDeftxt.setText(dbManager.getTenses(SharedClass.tense_id).get(0).getDef_eng().replace("\\n", "\n"));
-        //urduDeftxt.setText(dbManager.getTenses(SharedClass.tense_id).get(0).getDef_urdu().replace("\\n", "\n"));
+
         methodEnglish.setText(dbManager.getTenses(SharedClass.tense_id).get(0).getMethod_eng().replace("\\n", "\n"));
-        //methodUrdu.setText(dbManager.getTenses(SharedClass.tense_id).get(0).getMethod_urdu().replace("\\n", "\n"));
-        //urduDeftxt.setTypeface(alvi_Nastaleeq_Lahori);
-        //methodUrdu.setTypeface(alvi_Nastaleeq_Lahori);
+
         methodEnglish.setTypeface(montserrat_reg);
         engDeftxt.setTypeface(montserrat_reg);
 
@@ -183,8 +181,6 @@ public class PresentIndefinateTense extends AppCompatActivity {
             ImageButton volumeBtn = rowView.findViewById(R.id.volumeBtn);
 
             exampleTxt.setText(dbManager.getTenseExample(SharedClass.tense_id).get(i).getEnglishexample());
-            //meaningTxt.setText(dbManager.getTenseExample(SharedClass.tense_id).get(i).getUrduexample());
-
             volumeBtn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {

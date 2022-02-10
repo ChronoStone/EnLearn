@@ -29,7 +29,6 @@ public class EnglishLessons extends AppCompatActivity {
     RecyclerView mainOptionsLV;
     String[] shorttxt = {"EC", "CE"};
     String[] mainOpions = {"English Conversations", "Common Expressions"};
-    String[] mainOpionsurdu = {"Conversations en Anglais", "Expressions en Anglais"};
     MainOptionsAdapter mainOptionsAdapter;
 
     @Override
@@ -87,7 +86,7 @@ public class EnglishLessons extends AppCompatActivity {
         @Override
         public void onBindViewHolder(@NonNull MyAdapter holder, int position) {
             holder.optionname.setText(mainOpions[position]);
-            //holder.optionnameurdu.setText(mainOpionsurdu[position]);
+
             holder.shortTxt.setText(shorttxt[position]);
             holder.shortTxtCard.setCardBackgroundColor(EnglishLessons.this.getResources().getColor(R.color.white));
         }
@@ -100,7 +99,7 @@ public class EnglishLessons extends AppCompatActivity {
         public class MyAdapter extends RecyclerView.ViewHolder {
             LinearLayout cell;
             CardView shortTxtCard, mainCard;
-            TextView shortTxt, optionname, optionnameurdu;
+            TextView shortTxt, optionname;
 
             public MyAdapter(@NonNull View itemView) {
                 super(itemView);
@@ -110,7 +109,6 @@ public class EnglishLessons extends AppCompatActivity {
                 mainCard = itemView.findViewById(R.id.mainCard);
                 shortTxt = itemView.findViewById(R.id.shortTxt);
                 optionname = itemView.findViewById(R.id.optionname);
-                optionnameurdu = itemView.findViewById(R.id.optionnameurdu);
 
                 itemView.setOnClickListener(new View.OnClickListener() {
                     @Override

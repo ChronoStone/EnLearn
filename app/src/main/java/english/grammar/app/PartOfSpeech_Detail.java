@@ -29,7 +29,7 @@ public class PartOfSpeech_Detail extends AppCompatActivity {
     TextView titleTxt;
     Conversation_DBManager dbManager;
     Typeface alvi_Nastaleeq_Lahori;
-    TextView engDeftxt, urduDeftxt, methodEnglish, methodUrdu;
+    TextView engDeftxt, methodEnglish;
     ImageButton defBtn, exBtn;
 
     @Override
@@ -72,13 +72,12 @@ public class PartOfSpeech_Detail extends AppCompatActivity {
         }
 
         titleTxt = findViewById(R.id.titleTxt);
-        //methodUrdu = findViewById(R.id.methodUrdu);
+
         methodEnglish = findViewById(R.id.methodEnglish);
         engDeftxt = findViewById(R.id.engDeftxt);
-       // urduDeftxt = findViewById(R.id.urduDeftxt);
-        //urduDeftxt.setTypeface(alvi_Nastaleeq_Lahori);
+
         engDeftxt.setText(dbManager.getPartsOfSpeech(SharedClass.tense_id).get(0).getDef_eng());
-        //urduDeftxt.setText(dbManager.getPartsOfSpeech(SharedClass.tense_id).get(0).getDef_urdu());
+
         methodEnglish.setText(dbManager.getPartsOfSpeech(SharedClass.tense_id).get(0).getEg_eng());
         titleTxt.setText(dbManager.getPartsOfSpeech(SharedClass.tense_id).get(0).getName_eng());
 
@@ -168,7 +167,7 @@ public class PartOfSpeech_Detail extends AppCompatActivity {
             TextView meaningTxt = rowView.findViewById(R.id.meaningTxt);
 
             exampleTxt.setText(exampleData.get(i).getExample());
-            //meaningTxt.setText(exampleData.get(i).getUrduMeaning());
+
 
             return rowView;
         }

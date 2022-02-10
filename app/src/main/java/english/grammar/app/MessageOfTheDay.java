@@ -117,7 +117,7 @@ public class MessageOfTheDay extends AppCompatActivity {
         @Override
         public void onBindViewHolder(@NonNull MyAdapter myAdapter, int i) {
             myAdapter.msgTxt.setText(dbManager.getQuote().get(i).getEng_quote());
-            myAdapter.urduMeaningTxt.setText(dbManager.getQuote().get(i).getAuthor());
+
             if (dbManager.getQuote().get(i).getFav().equals("1")) {
                 myAdapter.favouriteBtn.setBackgroundResource(R.drawable.favorite_heart_button);
             } else {
@@ -131,7 +131,7 @@ public class MessageOfTheDay extends AppCompatActivity {
         }
 
         public class MyAdapter extends RecyclerView.ViewHolder {
-            TextView dateTxt, msgTxt, urduMeaningTxt;
+            TextView dateTxt, msgTxt;
             ImageButton speakBtn, favouriteBtn, shareBtn;
             LinearLayout favLayout;
 
@@ -139,7 +139,7 @@ public class MessageOfTheDay extends AppCompatActivity {
                 super(itemView);
                 dateTxt = itemView.findViewById(R.id.dateTxt);
                 msgTxt = itemView.findViewById(R.id.msgTxt);
-                urduMeaningTxt = itemView.findViewById(R.id.urduMeaningTxt);
+
                 speakBtn = itemView.findViewById(R.id.speakBtn);
                 favouriteBtn = itemView.findViewById(R.id.favouriteBtn);
                 favLayout = itemView.findViewById(R.id.favLayout);
