@@ -70,12 +70,12 @@ public class DictionaryActivity extends AppCompatActivity {
 
         dbManager = new DBManager(this);
         dbManager.open();
-        try {
+       /* try {
             dbManager.copyDataBase();
         } catch (Exception e) {
             e.printStackTrace();
         }
-
+      */
         if (dictionaryData.size() > 0) {
             dictionaryData.clear();
         }

@@ -56,11 +56,12 @@
 
                 <english.grammar.app.Customization.AutoResizeTextView
                     android:id="@+id/optionname"
-                    android:layout_width="291dp"
+                    android:layout_width="294dp"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="6dp"
                     android:layout_marginRight="6dp"
                     android:layout_weight="1.5"
+                    android:paddingLeft="4dp"
                     android:fontFamily="@font/english_font_semi_bold"
                     android:gravity="center_vertical"
                     android:maxLines="1"
