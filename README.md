@@ -12,7 +12,7 @@ A Java Android mobile application for learning English basics
 | --- | --- | --- |
 | ![App Screenshot](https://github.com/ChronoStone/EnLearn/blob/master/01.jpg?raw=true) | ![App Screenshot](https://github.com/ChronoStone/EnLearn/blob/master/02.jpg?raw=true) | ![App Screenshot](https://github.com/ChronoStone/EnLearn/blob/master/03.jpg?raw=true) |
 
-| Common Expressions | Popular Quotes | Grammar, Tenses, Listening courses |
+| Common Expressions | Popular Quotes | Grammar, Tenses and Listening |
 | --- | --- | --- |
 | ![App Screenshot](https://github.com/ChronoStone/EnLearn/blob/master/04.jpg?raw=true) | ![App Screenshot](https://github.com/ChronoStone/EnLearn/blob/master/05.jpg?raw=true) | ![App Screenshot](https://github.com/ChronoStone/EnLearn/blob/master/07.jpg?raw=true) |
 
